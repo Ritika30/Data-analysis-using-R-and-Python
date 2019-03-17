@@ -32,8 +32,8 @@ my_data$job = as.factor(as.character(my_data$job))
 
 #missing value analysis
 
-##if missing values are more than 30 then we tend drop the variable becuase it would'nt give us much info
-#here we are tryinh to find number of missing vaues in each variable
+##if missing values are more than 30 then we tend drop the variable because it would'nt give us much info
+#here we are trying to find number of missing values in each variable
 is.na(my_data)
 sum(is.na(my_data))
 
@@ -104,6 +104,7 @@ my_data[811,1]
 impute.knn(my_data,k=5)
 #value=36
 
-#so knn imputation gives the nearest value to actual value so we will use this method for filling outliers of this column of this dataset
+#so knn imputation gives the nearest value to actual value so we will use this method for filling outliers
+#of this column of this dataset
 
   
